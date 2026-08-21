@@ -108,6 +108,8 @@ h1 {
 }
 h1 .honorific { font-weight: inherit; color: inherit; letter-spacing: inherit; }
 h1 .nickname { color: var(--accent); font-weight: 500; }
+.affiliation-logo { display: inline-block; margin: 4px 0 18px; }
+.affiliation-logo img { height: 32px; width: auto; }
 .hero-title { font-size: 1rem; line-height: 1.55; color: var(--text-2); margin-bottom: 24px; }
 .hero-title a { color: inherit; text-decoration-color: var(--line-strong); }
 .hero-title a:hover { color: var(--accent); }
