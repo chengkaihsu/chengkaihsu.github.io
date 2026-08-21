@@ -9,7 +9,7 @@
 2. Research Agenda 與 Current Research Projects 兩區內容幾乎一字不差地重複（四個主題各出現兩次）。
 3. 「CV Coming Soon」按鈕指向 `#`，點了沒反應。
 4. 頭像是 "KH" 文字佔位符。
-5. 聯絡信箱仍是 Berkeley（`ckh4618@berkeley.edu`），但職稱已是 ASU。
+5. 聯絡信箱仍是 Berkeley，但職稱已是 ASU。（已改為 `kai.h@asu.edu`）
 6. 缺少新進教職通常會有的區塊：News／招生資訊。
 
 **技術 / SEO**
@@ -34,7 +34,7 @@
 
 1. **放入照片**：把方形照片存成 `assets/portrait.jpg`（建議 ≥ 800×800）。
 2. **放入 CV**：存成 `assets/Hsu_CV.pdf`；若暫時沒有，請先把 hero 區的 CV 按鈕刪掉，不要留死連結。
-3. **Email**：拿到 ASU 信箱後，全站搜尋 `ckh4618@berkeley.edu` 替換（index.html 共 4 處）。
+3. **Email**：已全站改為 `kai.h@asu.edu`。
 4. **作者名單**：ResearchGate 對部分論文只顯示你一人，以下幾篇我無法確認完整共同作者，請核對：
    - Unpacking temporal trends in U.S. road injury mortality… (*Cities*, 2026)
    - Micro-mobility users' exposure to PM2.5… (*JCMR*, 2025)
@@ -44,7 +44,7 @@
    - Reconsidering seasonality… (*TBS*, 2024)
    - Air pollution exposure… central London (*JTH*, 2022) — 這篇我找不到線上連結，目前只列標題。
 5. **年份**：我依線上發表日期標記；若你習慣以卷期年份為準（例如 SCS 那篇可能是 2024 vol. / 2025 issue），請自行調整。
-6. **招生文字**：「Fall 2027 入學」「PhD in Geography / PhD in Urban Planning」是我依 SGSUP 常見學程推測，請依實際狀況修改或刪除。
+6. **招生文字**：Prospective Students 區現在直接導向 SGSUP 的 Faculty Recruiting Doctoral Students 頁面，請記得請學院把你加進該頁名單。
 7. **OG 圖片**：`og:image` 指向 `assets/og-image.png`，請放一張 1200×630 的圖（可以就是你的照片加名字），否則分享預覽不會有圖。
 8. **News 內容**：請補上我不知道的事項（演講、獲獎、經費）。
 
