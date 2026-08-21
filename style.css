@@ -14,6 +14,10 @@
   --accent: #8c1d40;        /* ASU maroon */
   --accent-hover: #6e1532;
   --accent-soft: #f6e9ee;
+  --gold: #ffc627;          /* ASU gold — small touches only */
+  --gold-soft: #fff3cc;
+  --green: #2f7a55;         /* forest green — small touches only */
+  --green-soft: #e6f2ea;
   --radius: 12px;
   --max: 1080px;
   --sans: "Inter", ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
@@ -68,7 +72,7 @@ sub { font-size: 0.7em; }
   color: var(--text); text-decoration: none;
   display: inline-flex; align-items: center; gap: 10px;
 }
-.logo::before { content: ""; width: 10px; height: 10px; border-radius: 3px; background: var(--accent); }
+.logo::before { content: ""; width: 10px; height: 10px; border-radius: 3px; background: var(--gold); }
 .nav-links { display: flex; gap: 4px; font-size: 0.875rem; font-weight: 500; }
 .nav-links a {
   color: var(--text-2); text-decoration: none; padding: 6px 10px; border-radius: 8px;
@@ -97,7 +101,7 @@ sub { font-size: 0.7em; }
   color: var(--accent); font-weight: 600; font-size: 0.75rem;
   letter-spacing: 0.12em; text-transform: uppercase; margin: 0 0 20px;
 }
-.eyebrow::before { content: ""; width: 18px; height: 2px; background: var(--accent); border-radius: 2px; }
+.eyebrow::before { content: ""; width: 18px; height: 2px; background: var(--gold); border-radius: 2px; }
 h1 {
   font-size: clamp(2.4rem, 5vw, 3.9rem); font-weight: 800; letter-spacing: -0.035em;
   margin-bottom: 16px; color: var(--text);
@@ -164,10 +168,10 @@ h2 { font-size: clamp(1.7rem, 2.8vw, 2.2rem); font-weight: 800; letter-spacing: 
   background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius);
   padding: 28px; transition: border-color .15s ease;
 }
-.card:hover { border-color: var(--accent); }
+.card:hover { border-color: var(--green); }
 .card-number {
   display: inline-grid; place-items: center; width: 32px; height: 32px; border-radius: 8px;
-  background: var(--accent-soft); color: var(--accent);
+  background: var(--green-soft); color: var(--green);
   font-family: var(--display); font-size: 0.8rem; font-weight: 800; margin-bottom: 18px;
 }
 .card h3 { font-size: 1.1rem; font-weight: 700; letter-spacing: -0.015em; margin-bottom: 10px; }
@@ -200,7 +204,7 @@ a.pub-title:hover { color: var(--accent); }
 .pub-venue em { font-style: normal; }
 .pub.featured .pub-year::after {
   content: "Featured"; display: inline-block; margin-top: 8px; padding: 2px 7px; border-radius: 6px;
-  background: var(--accent-soft); color: var(--accent);
+  background: var(--gold-soft); color: #7a5a00;
   font-family: var(--sans); font-size: 0.62rem; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase;
 }
 
@@ -210,7 +214,7 @@ a.pub-title:hover { color: var(--accent); }
   display: grid; grid-template-columns: 100px minmax(0, 1fr); gap: 20px;
   padding: 18px 0; border-bottom: 1px solid var(--line);
 }
-.timeline time { font-family: var(--display); font-weight: 700; font-size: 0.85rem; color: var(--accent); padding-top: 2px; }
+.timeline time { font-family: var(--display); font-weight: 700; font-size: 0.85rem; color: var(--green); padding-top: 2px; }
 .timeline p { color: var(--text-2); }
 .timeline.awards p strong { color: var(--text); font-weight: 600; }
 .timeline.awards p { font-size: 0.95rem; line-height: 1.5; }
@@ -219,7 +223,7 @@ a.pub-title:hover { color: var(--accent); }
 /* Callout */
 .callout {
   margin-top: 28px; padding: 24px 28px; border-radius: var(--radius);
-  background: var(--accent-soft); border: 1px solid color-mix(in srgb, var(--accent) 25%, transparent);
+  background: var(--green-soft); border: 1px solid color-mix(in srgb, var(--green) 25%, transparent);
 }
 .callout h3 { font-size: 1rem; font-weight: 700; margin-bottom: 8px; }
 .callout p { color: var(--text-2); font-size: 0.93rem; margin-bottom: 16px; max-width: none; }
