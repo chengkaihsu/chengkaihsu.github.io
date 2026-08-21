@@ -108,9 +108,9 @@ h1 {
 }
 h1 .honorific { font-weight: inherit; color: inherit; letter-spacing: inherit; }
 h1 .nickname { color: var(--accent); font-weight: 500; }
-.affiliation-logo { display: inline-block; margin: 4px 0 18px; }
-.affiliation-logo img { height: 32px; width: auto; }
-.hero-title { font-size: 1rem; line-height: 1.55; color: var(--text-2); margin-bottom: 24px; }
+.affiliation-logo { display: inline-block; margin: 0 0 28px; }
+.affiliation-logo img { height: 56px; width: auto; }
+.hero-title { font-size: 1.05rem; font-weight: 600; line-height: 1.55; color: var(--text); margin-bottom: 12px; }
 .hero-title a { color: inherit; text-decoration-color: var(--line-strong); }
 .hero-title a:hover { color: var(--accent); }
 .lead { font-size: 1.15rem; line-height: 1.65; max-width: 600px; color: var(--text-2); }
