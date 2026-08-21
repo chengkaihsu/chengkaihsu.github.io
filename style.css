@@ -105,7 +105,7 @@ h1 {
   font-size: clamp(2.4rem, 5vw, 3.9rem); font-weight: 800; letter-spacing: -0.035em;
   margin-bottom: 16px; color: var(--text);
 }
-h1 .honorific { font-weight: 500; color: var(--muted); letter-spacing: -0.02em; }
+h1 .honorific { font-weight: inherit; color: inherit; letter-spacing: inherit; }
 h1 .nickname { color: var(--accent); font-weight: 500; }
 .hero-title { font-size: 1rem; line-height: 1.55; color: var(--text-2); margin-bottom: 24px; }
 .hero-title a { color: inherit; text-decoration-color: var(--line-strong); }
