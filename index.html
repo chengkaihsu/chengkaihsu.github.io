@@ -3,215 +3,528 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Cheng-Kai (Kai) Hsu</title>
+  <title>Cheng-Kai (Kai) Hsu — Transportation, Climate &amp; Health</title>
+  <meta name="description" content="Cheng-Kai (Kai) Hsu is an incoming Assistant Professor at Arizona State University studying how transportation systems, extreme heat, and air pollution shape road safety and health equity in cities." />
+  <meta name="author" content="Cheng-Kai Hsu" />
+  <link rel="canonical" href="https://chengkaihsu.github.io/" />
+
+  <!-- Social sharing -->
+  <meta property="og:type" content="profile" />
+  <meta property="og:title" content="Cheng-Kai (Kai) Hsu" />
+  <meta property="og:description" content="Transportation · Climate · Health. Incoming Assistant Professor, School of Geographical Sciences and Urban Planning, Arizona State University." />
+  <meta property="og:url" content="https://chengkaihsu.github.io/" />
+  <meta property="og:image" content="https://chengkaihsu.github.io/assets/og-image.png" />
+  <meta name="twitter:card" content="summary" />
+
+  <!-- Favicon (inline SVG, no extra file needed) -->
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230f4c5c'/%3E%3Ctext x='32' y='42' text-anchor='middle' font-family='Inter,Arial,sans-serif' font-size='30' font-weight='800' fill='%23fff'%3EKH%3C/text%3E%3C/svg%3E" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
+
+  <!-- Structured data for Google -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Cheng-Kai Hsu",
+    "alternateName": "Kai Hsu",
+    "jobTitle": "Assistant Professor",
+    "affiliation": {
+      "@type": "Organization",
+      "name": "School of Geographical Sciences and Urban Planning, Arizona State University"
+    },
+    "alumniOf": [
+      { "@type": "Organization", "name": "University of California, Berkeley" },
+      { "@type": "Organization", "name": "Imperial College London" },
+      { "@type": "Organization", "name": "National Cheng Kung University" }
+    ],
+    "email": "mailto:ckh4618@berkeley.edu",
+    "url": "https://chengkaihsu.github.io/",
+    "sameAs": [
+      "https://scholar.google.com/citations?user=EbkMt7EAAAAJ",
+      "https://www.linkedin.com/in/cheng-kai-hsu-105a2212b/",
+      "https://github.com/chengkaihsu",
+      "https://www.researchgate.net/profile/Cheng-Kai-Hsu-3"
+    ]
+  }
+  </script>
 </head>
 
 <body>
+  <a class="skip-link" href="#about">Skip to content</a>
+
   <header class="site-header">
-    <nav class="nav">
-      <a class="logo" href="#home">Kai Hsu</a>
-      <div class="nav-links">
+    <nav class="nav" aria-label="Primary">
+      <a class="logo" href="#top">Kai Hsu</a>
+      <button class="nav-toggle" aria-expanded="false" aria-controls="nav-links" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
+      </button>
+      <div class="nav-links" id="nav-links">
         <a href="#about">About</a>
         <a href="#research">Research</a>
-        <a href="#projects">Projects</a>
         <a href="#publications">Publications</a>
+        <a href="#news">News</a>
+        <a href="#students">Prospective Students</a>
         <a href="#contact">Contact</a>
       </div>
     </nav>
   </header>
 
-  <main>
-    <section id="home" class="hero">
+  <main id="top">
+    <!-- ============ HERO ============ -->
+    <section class="hero">
       <div class="hero-text">
         <p class="eyebrow">Transportation · Climate · Health</p>
-        <h1>Cheng-Kai <span>(Kai)</span> Hsu</h1>
-        <h2>
-          Incoming Assistant Professor<br>
-          School of Geographical Sciences and Urban Planning<br>
+        <h1>Cheng-Kai <span class="nickname">(Kai)</span> Hsu</h1>
+        <p class="hero-title">
+          Incoming Assistant Professor<br />
+          <a href="https://sgsup.asu.edu/" target="_blank" rel="noopener">School of Geographical Sciences and Urban Planning</a><br />
           Arizona State University
-        </h2>
+        </p>
 
         <p class="lead">
-          I study how transportation systems shape environmental exposures, road safety,
-          and health equity in cities. My work connects urban planning, climate change,
-          air pollution, and injury epidemiology to inform healthier and more sustainable
-          mobility systems.
+          I study how transportation systems shape exposure to extreme heat and air pollution,
+          and how those exposures translate into road traffic injuries, health outcomes, and
+          inequities in cities across the Americas and Asia.
         </p>
 
         <div class="buttons">
-          <a href="https://scholar.google.com/citations?user=EbkMt7EAAAAJ&hl=en" class="button primary" target="_blank">Google Scholar</a>
-          <a href="https://www.linkedin.com/in/cheng-kai-hsu-105a2212b/" class="button" target="_blank">LinkedIn</a>
-          <a href="https://github.com/chengkaihsu" class="button" target="_blank">GitHub</a>
-          <a href="#" class="button">CV Coming Soon</a>
+          <a href="https://scholar.google.com/citations?user=EbkMt7EAAAAJ&amp;hl=en" class="button primary" target="_blank" rel="noopener">Google Scholar</a>
+          <a href="assets/Hsu_CV.pdf" class="button" target="_blank" rel="noopener">CV</a>
           <a href="mailto:ckh4618@berkeley.edu" class="button">Email</a>
+          <a href="https://www.linkedin.com/in/cheng-kai-hsu-105a2212b/" class="button ghost" target="_blank" rel="noopener">LinkedIn</a>
+          <a href="https://github.com/chengkaihsu" class="button ghost" target="_blank" rel="noopener">GitHub</a>
         </div>
       </div>
 
-      <aside class="profile-card">
-        <div class="portrait-placeholder">KH</div>
-        <p class="profile-name">Cheng-Kai Hsu</p>
-        <p class="profile-title">Incoming Assistant Professor, ASU</p>
-        <div class="profile-rule"></div>
-        <p class="profile-label">Research areas</p>
-        <ul>
-          <li>Climate and road safety</li>
-          <li>Air pollution and mobility</li>
-          <li>Urban climate and health</li>
-          <li>Environmental epidemiology</li>
-        </ul>
-      </aside>
+      <figure class="portrait">
+        <!-- Replace assets/portrait.jpg with your photo (square, ≥ 800×800 px). The initials show until the file exists. -->
+        <img src="assets/portrait.jpg" alt="Portrait of Cheng-Kai Hsu" width="360" height="360"
+             onerror="this.style.display='none'; this.nextElementSibling.style.display='grid';" />
+        <div class="portrait-fallback" aria-hidden="true">KH</div>
+        <figcaption>
+          <strong>Cheng-Kai Hsu</strong>
+          <span>PhD, City &amp; Regional Planning, UC Berkeley</span>
+        </figcaption>
+      </figure>
     </section>
 
+    <!-- ============ ABOUT ============ -->
     <section id="about" class="section two-column">
-      <div>
+      <div class="section-head">
         <p class="eyebrow">About</p>
-        <h2>About Me</h2>
+        <h2>About me</h2>
       </div>
 
       <div class="text-block">
+        <p class="intro">
+          I am an incoming Assistant Professor in the School of Geographical Sciences and Urban Planning at
+          Arizona State University. My research sits at the intersection of transportation, climate change,
+          environmental health, and urban planning.
+        </p>
         <p>
-          I am an Incoming Assistant Professor in the School of Geographical Sciences and Urban Planning at Arizona State University.
+          A central thread of my work asks how heat affects road traffic injuries and deaths, and why those
+          effects differ by travel mode, age, sex, income, and urban context. Using data from hundreds of cities
+          in Latin America, Taiwan, and the United States, I combine methods from injury epidemiology,
+          transportation research, urban analytics, and causal inference to produce evidence that can guide
+          climate adaptation and Vision Zero strategies.
+        </p>
+        <p>
+          I am also interested in how transportation and climate policies—fleet electrification, active travel,
+          urban greening, and safer street design—can reduce exposure to air pollution and heat, improve
+          population health, and narrow environmental inequities. Earlier work examined how algorithmic
+          incentives and heat jointly shape risky riding among on-demand food-delivery motorcyclists.
+        </p>
+        <p>
+          Before joining ASU, I was a postdoctoral researcher at the Institute of Transportation Studies,
+          UC Berkeley, where I also completed my PhD in City and Regional Planning. I hold an MSc in Transport
+          from Imperial College London and University College London and a BS in Urban Planning from National
+          Cheng Kung University, Taiwan.
         </p>
 
-        <p>
-          My research lies at the intersection of transportation, climate change, environmental health, and urban planning. I study how transportation systems shape exposure to environmental hazards such as extreme heat and air pollution, and how these exposures influence road safety, health, and equity. My work combines methods from epidemiology, transportation research, urban analytics, and causal inference to generate evidence that can inform healthier and more sustainable cities.
-        </p>
-
-        <p>
-          A major focus of my research examines how heat affects road traffic injuries and fatalities across different transportation modes, population groups, and urban contexts. I am also interested in understanding how transportation and climate policies—including fleet electrification, active transportation, and urban greening—can improve population health and reduce environmental inequalities.
-        </p>
-
-        <p>
-          I completed my PhD in City and Regional Planning at the University of California, Berkeley, where I also served as a postdoctoral researcher at the Institute of Transportation Studies. Prior to Berkeley, I earned an MSc in Transport from Imperial College London and a BS in Urban Planning from National Cheng Kung University in Taiwan.
-        </p>
+        <dl class="facts">
+          <div><dt>Position</dt><dd>Assistant Professor, ASU (from Fall 2026)</dd></div>
+          <div><dt>Previously</dt><dd>Postdoctoral Researcher, ITS Berkeley</dd></div>
+          <div><dt>Education</dt><dd>PhD UC Berkeley · MSc Imperial College London &amp; UCL · BS NCKU</dd></div>
+          <div><dt>Methods</dt><dd>Case-crossover designs, time-series, age–period–cohort, causal inference, health impact assessment</dd></div>
+        </dl>
       </div>
     </section>
 
+    <!-- ============ RESEARCH ============ -->
     <section id="research" class="section alt">
-      <p class="eyebrow">Research</p>
-      <h2>Research Agenda</h2>
+      <div class="section-head">
+        <p class="eyebrow">Research</p>
+        <h2>Research themes</h2>
+        <p class="section-intro">
+          Four connected lines of work, each linking a transportation or climate exposure to a measurable
+          health outcome.
+        </p>
+      </div>
 
       <div class="grid">
         <article class="card">
           <span class="card-number">01</span>
-          <h3>Heat, Mobility, and Road Safety</h3>
+          <h3>Heat, mobility &amp; road safety</h3>
           <p>
-            I examine how ambient temperature and extreme heat affect road traffic injuries and fatalities across transportation modes, demographic groups, and urban contexts.
+            How ambient and nighttime heat raise the risk of crashes, injuries, and deaths—and who is most
+            affected: motorcyclists, cyclists, pedestrians, older adults, and residents of lower-income and
+            high-conflict neighborhoods.
           </p>
+          <p class="card-meta">Latin America · Taiwan · California</p>
         </article>
 
         <article class="card">
           <span class="card-number">02</span>
-          <h3>Air Pollution and Transportation</h3>
+          <h3>Air pollution &amp; transportation</h3>
           <p>
-            My work evaluates how transportation policies, fleet electrification, and urban mobility interventions may reduce PM2.5 exposure and improve public health.
+            Exposure to PM<sub>2.5</sub> among commuters and micro-mobility users, neighborhood disparities in
+            pollution across Latin American cities, and the health gains available from cleaner fleets and
+            mode shift.
           </p>
+          <p class="card-meta">340 Latin American cities · London · Kaohsiung</p>
         </article>
 
         <article class="card">
           <span class="card-number">03</span>
-          <h3>Urban Climate and Health Equity</h3>
+          <h3>Urban climate &amp; health equity</h3>
           <p>
-            I study urban heat island intensity and how city form, land use, and transportation systems contribute to environmental disparities.
+            Urban heat island intensity and how city form, land use, and transportation infrastructure
+            concentrate environmental burdens in particular places and populations.
           </p>
+          <p class="card-meta">SALURBAL collaboration</p>
         </article>
 
         <article class="card">
           <span class="card-number">04</span>
-          <h3>Health Impact Quantification</h3>
+          <h3>Policy evaluation &amp; health impact quantification</h3>
           <p>
-            I develop transparent and transferable frameworks for estimating the health benefits of climate and transportation interventions in cities.
+            Quasi-experimental evaluations of road-safety policies (e.g., Taiwan's non-yielding penalty
+            amendment) and transparent, transferable frameworks for estimating the health benefits of climate
+            and transportation interventions.
           </p>
+          <p class="card-meta">Transport Policy · Cities</p>
         </article>
       </div>
     </section>
 
-    <section id="projects" class="section">
-      <p class="eyebrow">Projects</p>
-      <h2>Current Research Projects</h2>
+    <!-- ============ PUBLICATIONS ============ -->
+    <section id="publications" class="section">
+      <div class="section-head">
+        <p class="eyebrow">Publications</p>
+        <h2>Publications</h2>
+        <p class="section-intro">
+          Peer-reviewed journal articles. A complete, continuously updated list is on
+          <a href="https://scholar.google.com/citations?user=EbkMt7EAAAAJ&amp;hl=en" target="_blank" rel="noopener">Google Scholar</a>.
+        </p>
+      </div>
 
-      <div class="project-list">
-        <article class="project">
-          <h3>Heat and Road Safety</h3>
-          <p>Investigating how temperature and extreme heat influence traffic injuries and fatalities across different transportation modes and populations.</p>
-        </article>
+      <div class="pub-filter" role="group" aria-label="Filter publications">
+        <button class="chip is-active" data-filter="all">All</button>
+        <button class="chip" data-filter="heat">Heat &amp; road safety</button>
+        <button class="chip" data-filter="air">Air pollution</button>
+        <button class="chip" data-filter="gig">Gig-economy riders</button>
+        <button class="chip" data-filter="policy">Policy &amp; trends</button>
+      </div>
 
-        <article class="project">
-          <h3>Transportation and Air Pollution</h3>
-          <p>Evaluating how transportation policies and fleet electrification can reduce PM2.5 exposure and improve public health.</p>
-        </article>
+      <ol class="pub-list" reversed>
+        <li class="pub" data-tags="heat">
+          <span class="pub-year">2026</span>
+          <div>
+            <a class="pub-title" href="https://doi.org/10.1007/s44327-026-00248-6" target="_blank" rel="noopener">
+              Extreme heat disproportionately increases severe road traffic crashes in high conflict settings and among vulnerable road users in California
+            </a>
+            <p class="pub-authors"><strong>Hsu, C.-K.</strong>, Quistberg, D. A., Pérez Ferrer, C., &amp; Rodriguez, D. A.</p>
+            <p class="pub-venue"><em>Discover Cities</em></p>
+          </div>
+        </li>
 
-        <article class="project">
-          <h3>Urban Heat Islands</h3>
-          <p>Examining the drivers and health implications of urban heat island intensity across cities in Latin America.</p>
-        </article>
+        <li class="pub" data-tags="policy">
+          <span class="pub-year">2026</span>
+          <div>
+            <a class="pub-title" href="https://www.sciencedirect.com/science/article/pii/S0264275125007930" target="_blank" rel="noopener">
+              Unpacking temporal trends in U.S. road injury mortality by mode of transportation and sex: An age–period–cohort analysis
+            </a>
+            <p class="pub-authors"><strong>Hsu, C.-K.</strong></p>
+            <p class="pub-venue"><em>Cities</em></p>
+          </div>
+        </li>
 
-        <article class="project">
-          <h3>Health Impact Quantification</h3>
-          <p>Developing transparent frameworks for estimating the health benefits of transportation and environmental interventions.</p>
-        </article>
+        <li class="pub featured" data-tags="heat">
+          <span class="pub-year">2025</span>
+          <div>
+            <a class="pub-title" href="https://doi.org/10.1038/s44284-025-00279-x" target="_blank" rel="noopener">
+              Individual and city-level variations in heat-related road traffic deaths in Latin America
+            </a>
+            <p class="pub-authors"><strong>Hsu, C.-K.</strong>, Quistberg, D. A., Sánchez, B. N., &amp; Rodriguez, D. A.</p>
+            <p class="pub-venue"><em>Nature Cities</em> · <a href="https://its.berkeley.edu/news/rising-temperatures-rising-risks-traffic-fatalities-latin-american-cities" target="_blank" rel="noopener">ITS Berkeley news</a></p>
+          </div>
+        </li>
+
+        <li class="pub" data-tags="air">
+          <span class="pub-year">2025</span>
+          <div>
+            <a class="pub-title" href="https://doi.org/10.1088/1748-9326/ae20a4" target="_blank" rel="noopener">
+              Urban and socioeconomic disparities in PM<sub>2.5</sub> exposure across 340 Latin American cities
+            </a>
+            <p class="pub-authors">Ascencio, E. J., Barja, A., Montes-Alvis, J. M., Kephart, J. L., Gouveia, N., <strong>Hsu, C.-K.</strong>, Rodríguez, D. A., Benmarhnia, T., Diez Roux, A. V., Bilal, U., Miranda, J. J., &amp; Carrasco-Escobar, G.</p>
+            <p class="pub-venue"><em>Environmental Research Letters</em></p>
+          </div>
+        </li>
+
+        <li class="pub" data-tags="policy">
+          <span class="pub-year">2025</span>
+          <div>
+            <a class="pub-title" href="https://www.sciencedirect.com/science/article/pii/S0967070X25002744" target="_blank" rel="noopener">
+              Every Stop Counts: Evaluating the impact of a new penalty amendment for non-yielding drivers on reducing road traffic injuries and deaths in Taiwan
+            </a>
+            <p class="pub-authors"><strong>Hsu, C.-K.</strong>, Wang, B. S., Lo, H., &amp; Chen, C.-W.</p>
+            <p class="pub-venue"><em>Transport Policy</em></p>
+          </div>
+        </li>
+
+        <li class="pub" data-tags="air">
+          <span class="pub-year">2025</span>
+          <div>
+            <a class="pub-title" href="https://www.sciencedirect.com/science/article/pii/S2950105925000166" target="_blank" rel="noopener">
+              Micro-mobility users' exposure to PM<sub>2.5</sub> pollution: A scoping review
+            </a>
+            <p class="pub-authors"><strong>Hsu, C.-K.</strong></p>
+            <p class="pub-venue"><em>Journal of Cycling and Micromobility Research</em></p>
+          </div>
+        </li>
+
+        <li class="pub" data-tags="heat">
+          <span class="pub-year">2025</span>
+          <div>
+            <a class="pub-title" href="https://www.sciencedirect.com/science/article/pii/S2210670724008242" target="_blank" rel="noopener">
+              Association of nighttime heat with road traffic mortality: A time-stratified case-crossover study
+            </a>
+            <p class="pub-authors"><strong>Hsu, C.-K.</strong></p>
+            <p class="pub-venue"><em>Sustainable Cities and Society</em></p>
+          </div>
+        </li>
+
+        <li class="pub" data-tags="gig heat">
+          <span class="pub-year">2024</span>
+          <div>
+            <a class="pub-title" href="https://www.sciencedirect.com/science/article/pii/S0001457524003865" target="_blank" rel="noopener">
+              Burning gig, rewarding risk: Effects of dual exposure to incentive structure and heat condition on risky driving among on-demand food-delivery motorcyclists in Kaohsiung, Taiwan
+            </a>
+            <p class="pub-authors"><strong>Hsu, C.-K.</strong></p>
+            <p class="pub-venue"><em>Accident Analysis &amp; Prevention</em></p>
+          </div>
+        </li>
+
+        <li class="pub" data-tags="heat">
+          <span class="pub-year">2024</span>
+          <div>
+            <a class="pub-title" href="https://www.sciencedirect.com/science/article/pii/S0277953624007871" target="_blank" rel="noopener">
+              A comparison of heat effects on road injury frequency between active travelers and motorized transportation users in six tropical and subtropical cities in Taiwan
+            </a>
+            <p class="pub-authors"><strong>Hsu, C.-K.</strong>, &amp; Rodríguez, D. A.</p>
+            <p class="pub-venue"><em>Social Science &amp; Medicine</em></p>
+          </div>
+        </li>
+
+        <li class="pub" data-tags="gig">
+          <span class="pub-year">2024</span>
+          <div>
+            <a class="pub-title" href="https://www.sciencedirect.com/science/article/pii/S0925753524001395" target="_blank" rel="noopener">
+              Time is money: Effects of time-sensitive incentive on risky driving among on-demand food-delivery motorcyclists in Taiwan
+            </a>
+            <p class="pub-authors"><strong>Hsu, C.-K.</strong>, Lee, T.-C., &amp; Wong, K. I.</p>
+            <p class="pub-venue"><em>Safety Science</em></p>
+          </div>
+        </li>
+
+        <li class="pub" data-tags="heat">
+          <span class="pub-year">2024</span>
+          <div>
+            <a class="pub-title" href="https://www.sciencedirect.com/science/article/pii/S2214140523001913" target="_blank" rel="noopener">
+              Heat-induced risks of road crashes among older motorcyclists: Evidence from three motorcycle-dominant cities in Taiwan
+            </a>
+            <p class="pub-authors"><strong>Hsu, C.-K.</strong></p>
+            <p class="pub-venue"><em>Journal of Transport &amp; Health</em></p>
+          </div>
+        </li>
+
+        <li class="pub" data-tags="heat">
+          <span class="pub-year">2024</span>
+          <div>
+            <a class="pub-title" href="https://www.sciencedirect.com/science/article/pii/S2214367X23001618" target="_blank" rel="noopener">
+              Reconsidering seasonality, weather, and road safety in non-temperate areas: The case of Kaohsiung, Taiwan
+            </a>
+            <p class="pub-authors"><strong>Hsu, C.-K.</strong></p>
+            <p class="pub-venue"><em>Travel Behaviour and Society</em></p>
+          </div>
+        </li>
+
+        <li class="pub" data-tags="gig">
+          <span class="pub-year">2023</span>
+          <div>
+            <a class="pub-title" href="https://doi.org/10.1177/03611981231168837" target="_blank" rel="noopener">
+              Kinematic characterization of risky riding behavior of on-demand food-delivery motorcyclists in Taiwan
+            </a>
+            <p class="pub-authors"><strong>Hsu, C.-K.</strong>, Lee, T.-C., &amp; Wong, K. I.</p>
+            <p class="pub-venue"><em>Transportation Research Record</em></p>
+          </div>
+        </li>
+
+        <li class="pub" data-tags="air">
+          <span class="pub-year">2022</span>
+          <div>
+            <span class="pub-title">
+              Air pollution exposure and health impacts of commuting by bus, underground, and bicycling in central London
+            </span>
+            <p class="pub-authors"><strong>Hsu, C.-K.</strong></p>
+            <p class="pub-venue"><em>Journal of Transport &amp; Health</em></p>
+          </div>
+        </li>
+
+        <li class="pub" data-tags="policy">
+          <span class="pub-year">2020</span>
+          <div>
+            <a class="pub-title" href="https://www.gssinst.org/irer/2020/11/02/comparison-of-housing-price-elasticities-resulting-from-different-types-of-multimodal-rail-stations-in-kaohsiung-taiwan-2/" target="_blank" rel="noopener">
+              Comparison of housing price elasticities resulting from different types of multimodal rail stations in Kaohsiung, Taiwan
+            </a>
+            <p class="pub-authors">Chen, Y.-J., &amp; <strong>Hsu, C.-K.</strong></p>
+            <p class="pub-venue"><em>International Real Estate Review</em></p>
+          </div>
+        </li>
+      </ol>
+    </section>
+
+    <!-- ============ NEWS ============ -->
+    <section id="news" class="section alt">
+      <div class="section-head">
+        <p class="eyebrow">News</p>
+        <h2>Recent updates</h2>
+      </div>
+
+      <ul class="timeline">
+        <li>
+          <time datetime="2026-08">Aug 2026</time>
+          <p>Joining the <a href="https://sgsup.asu.edu/" target="_blank" rel="noopener">School of Geographical Sciences and Urban Planning</a> at Arizona State University as an Assistant Professor.</p>
+        </li>
+        <li>
+          <time datetime="2026-04">Apr 2026</time>
+          <p>New paper in <em>Discover Cities</em>: extreme heat disproportionately increases severe crashes in high-conflict settings and among vulnerable road users in California.</p>
+        </li>
+        <li>
+          <time datetime="2026-02">Feb 2026</time>
+          <p>Age–period–cohort analysis of U.S. road injury mortality by mode and sex published in <em>Cities</em>.</p>
+        </li>
+        <li>
+          <time datetime="2025-10">Oct 2025</time>
+          <p>Our <em>Nature Cities</em> paper on heat-related road traffic deaths across 272 Latin American cities is featured by <a href="https://its.berkeley.edu/news/rising-temperatures-rising-risks-traffic-fatalities-latin-american-cities" target="_blank" rel="noopener">ITS Berkeley</a>.</p>
+        </li>
+        <li>
+          <time datetime="2025-09">Sep 2025</time>
+          <p>Two new papers: <em>Nature Cities</em> (heat and road deaths in Latin America) and <em>Transport Policy</em> (evaluating Taiwan's non-yielding penalty amendment).</p>
+        </li>
+      </ul>
+    </section>
+
+    <!-- ============ PROSPECTIVE STUDENTS ============ -->
+    <section id="students" class="section two-column">
+      <div class="section-head">
+        <p class="eyebrow">Join the lab</p>
+        <h2>Prospective students</h2>
+      </div>
+
+      <div class="text-block">
+        <p class="intro">
+          I am recruiting PhD and master's students, and welcome inquiries from postdoctoral researchers and
+          visiting scholars, to start in Fall 2027.
+        </p>
+        <p>
+          I am looking for students who are curious about the links between transportation, climate, and health,
+          and who want to work with large-scale spatial, health, and crash data. Backgrounds in urban planning,
+          transportation engineering, geography, epidemiology, public health, environmental science, statistics,
+          or data science are all welcome. Programming experience (R or Python) and comfort with GIS are helpful
+          but not required—what matters most is motivation and a willingness to learn.
+        </p>
+        <p>
+          Students can apply through the PhD in Geography, PhD in Urban Planning, or master's programs at the
+          <a href="https://sgsup.asu.edu/degree-programs" target="_blank" rel="noopener">School of Geographical Sciences and Urban Planning</a>.
+        </p>
+
+        <div class="callout">
+          <h3>How to get in touch</h3>
+          <p>
+            Email me with (1) a short note on why you are interested in this research area, (2) your CV, and
+            (3) a writing sample or description of a past project if you have one. Please put
+            <strong>“Prospective student”</strong> in the subject line so I don't miss it.
+          </p>
+          <a class="button primary" href="mailto:ckh4618@berkeley.edu?subject=Prospective%20student">Email Kai</a>
+        </div>
       </div>
     </section>
 
-    <section id="publications" class="section alt">
-      <p class="eyebrow">Publications</p>
-      <h2>Selected Work</h2>
-
-      <p class="section-intro">
-        For a complete and continuously updated publication list, please visit my
-        <a href="https://scholar.google.com/citations?user=EbkMt7EAAAAJ&hl=en" target="_blank">Google Scholar profile</a>.
-      </p>
-
-      <div class="pub-list">
-        <article class="pub">
-          <h3>Temperature Effects on Road-Traffic Mortality Across Latin America</h3>
-          <p>Research on heat-related road traffic mortality across Latin American cities, with attention to individual and city-level variation.</p>
-        </article>
-
-        <article class="pub">
-          <h3>Heat Exposure and Road Traffic Injuries</h3>
-          <p>Studies examining how temperature affects crash and injury risks across modes, age groups, and urban settings.</p>
-        </article>
-
-        <article class="pub">
-          <h3>Transportation Interventions and PM2.5 Health Impacts</h3>
-          <p>Work quantifying potential health benefits from cleaner transportation systems and urban environmental interventions.</p>
-        </article>
-      </div>
-    </section>
-
-    <section id="contact" class="section contact-section">
-      <div>
+    <!-- ============ CONTACT ============ -->
+    <section id="contact" class="section alt contact-section">
+      <div class="section-head">
         <p class="eyebrow">Contact</p>
-        <h2>Get in Touch</h2>
+        <h2>Get in touch</h2>
       </div>
 
       <div class="contact-card">
-        <p>
-          Cheng-Kai Hsu<br>
-          Incoming Assistant Professor<br>
-          School of Geographical Sciences and Urban Planning<br>
-          Arizona State University
-        </p>
+        <address>
+          <strong>Cheng-Kai (Kai) Hsu</strong><br />
+          Assistant Professor<br />
+          School of Geographical Sciences and Urban Planning<br />
+          Arizona State University<br />
+          Tempe, AZ
+        </address>
 
         <p><a href="mailto:ckh4618@berkeley.edu">ckh4618@berkeley.edu</a></p>
 
-        <p class="contact-links">
-          <a href="https://scholar.google.com/citations?user=EbkMt7EAAAAJ&hl=en" target="_blank">Google Scholar</a>
-          <a href="https://www.linkedin.com/in/cheng-kai-hsu-105a2212b/" target="_blank">LinkedIn</a>
-          <a href="https://github.com/chengkaihsu" target="_blank">GitHub</a>
-        </p>
+        <div class="contact-links">
+          <a href="https://scholar.google.com/citations?user=EbkMt7EAAAAJ&amp;hl=en" target="_blank" rel="noopener">Google Scholar</a>
+          <a href="https://www.researchgate.net/profile/Cheng-Kai-Hsu-3" target="_blank" rel="noopener">ResearchGate</a>
+          <a href="https://www.linkedin.com/in/cheng-kai-hsu-105a2212b/" target="_blank" rel="noopener">LinkedIn</a>
+          <a href="https://github.com/chengkaihsu" target="_blank" rel="noopener">GitHub</a>
+        </div>
       </div>
     </section>
   </main>
 
   <footer>
-    <p>© <span id="year"></span> Cheng-Kai Hsu. Built with GitHub Pages.</p>
+    <p>© <span id="year">2026</span> Cheng-Kai Hsu · <a href="https://github.com/chengkaihsu/chengkaihsu.github.io" target="_blank" rel="noopener">Source</a></p>
   </footer>
 
   <script>
+    // Footer year
     document.getElementById("year").textContent = new Date().getFullYear();
+
+    // Mobile nav toggle
+    const toggle = document.querySelector(".nav-toggle");
+    const links = document.getElementById("nav-links");
+    toggle.addEventListener("click", () => {
+      const open = toggle.getAttribute("aria-expanded") === "true";
+      toggle.setAttribute("aria-expanded", String(!open));
+      links.classList.toggle("is-open", !open);
+    });
+    links.querySelectorAll("a").forEach(a => a.addEventListener("click", () => {
+      toggle.setAttribute("aria-expanded", "false");
+      links.classList.remove("is-open");
+    }));
+
+    // Publication filter
+    const chips = document.querySelectorAll(".chip");
+    const pubs = document.querySelectorAll(".pub");
+    chips.forEach(chip => chip.addEventListener("click", () => {
+      chips.forEach(c => c.classList.remove("is-active"));
+      chip.classList.add("is-active");
+      const f = chip.dataset.filter;
+      pubs.forEach(p => {
+        p.hidden = f !== "all" && !p.dataset.tags.split(" ").includes(f);
+      });
+    }));
   </script>
 </body>
 </html>
