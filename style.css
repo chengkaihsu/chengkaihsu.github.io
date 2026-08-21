@@ -217,6 +217,9 @@ a.pub-title:hover { color: var(--accent); }
 }
 .timeline time { font-family: var(--display); font-weight: 700; font-size: 0.85rem; color: var(--accent); padding-top: 2px; }
 .timeline p { color: var(--text-2); }
+.timeline.awards p strong { color: var(--text); font-weight: 600; }
+.timeline.awards p { font-size: 0.95rem; line-height: 1.5; }
+.timeline.awards time { color: var(--muted); }
 
 /* Callout */
 .callout {
