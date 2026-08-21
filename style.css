@@ -159,6 +159,7 @@ h2 { font-size: clamp(1.7rem, 2.8vw, 2.2rem); font-weight: 800; letter-spacing: 
 .text-block .intro { color: var(--text); font-size: 1.2rem; font-weight: 500; letter-spacing: -0.01em; line-height: 1.5; }
 
 .facts { display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px 32px; margin: 36px 0 0; padding-top: 28px; border-top: 1px solid var(--line); }
+.facts-col { display: grid; gap: 20px; align-content: start; }
 .facts dt { font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.12em; color: var(--muted); font-weight: 600; margin-bottom: 4px; }
 .facts dd { margin: 0; color: var(--text); font-size: 0.93rem; line-height: 1.6; }
 
