@@ -201,7 +201,7 @@ h2 { font-size: clamp(1.7rem, 2.8vw, 2.2rem); font-weight: 800; letter-spacing: 
   padding: 22px 0; border-bottom: 1px solid var(--line);
 }
 .pub[hidden] { display: none; }
-.pub-year { font-family: var(--display); font-weight: 700; font-size: 0.85rem; color: var(--muted); padding-top: 3px; }
+.pub-year { font-family: var(--display); font-weight: 700; font-size: 0.85rem; color: var(--green); padding-top: 3px; }
 .pub-title { font-weight: 600; color: var(--text); text-decoration: none; font-size: 1rem; line-height: 1.45; letter-spacing: -0.005em; }
 a.pub-title:hover { color: var(--accent); }
 .pub-authors { color: var(--text-2); font-size: 0.875rem; margin: 6px 0 2px; }
@@ -224,7 +224,7 @@ a.pub-title:hover { color: var(--accent); }
 .timeline p { color: var(--text-2); }
 .timeline.awards p strong { color: var(--text); font-weight: 600; }
 .timeline.awards p { font-size: 0.95rem; line-height: 1.5; }
-.timeline.awards time { color: var(--muted); }
+.timeline.awards time { color: var(--green); }
 
 /* Callout */
 .callout {
