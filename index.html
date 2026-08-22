@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Cheng-Kai (Kai) Hsu — Climate, Health &amp; Transportation</title>
-  <meta name="description" content="Cheng-Kai (Kai) Hsu is an Assistant Professor at Arizona State University studying how climate stressors and environmental exposures such as extreme heat, precipitation, air pollution, and greenspace shape human mobility, transportation systems, and public health across Latin America, Asia, and the United States." />
+  <meta name="description" content="Cheng-Kai (Kai) Hsu is an Assistant Professor at Arizona State University studying how climate stressors and environmental exposures such as extreme heat, precipitation, air pollution, and greenspace interact with urban and transportation systems to shape human mobility and population health across Latin America, Asia, and the United States." />
   <meta name="author" content="Cheng-Kai Hsu" />
   <link rel="canonical" href="https://ckhsu.com/" />
 
@@ -44,6 +44,7 @@
     "email": "mailto:kai.h@asu.edu",
     "url": "https://ckhsu.com/",
     "sameAs": [
+      "https://search.asu.edu/profile/5831100",
       "https://scholar.google.com/citations?user=EbkMt7EAAAAJ",
       "https://orcid.org/0000-0001-7254-0602",
       "https://www.linkedin.com/in/cheng-kai-hsu-105a2212b/",
@@ -99,8 +100,8 @@
 
         <p class="lead">
           I study how climate stressors and environmental exposures—extreme heat, precipitation, air pollution,
-          and greenspace—shape human mobility, transportation systems, and public and global health across
-          Latin America, Asia, and the United States.
+          and greenspace—interact with urban and transportation systems to shape human mobility and population
+          health across Latin America, Asia, and the United States.
         </p>
 
         <div class="buttons">
@@ -546,6 +547,7 @@
         <p><a href="mailto:kai.h@asu.edu">kai.h@asu.edu</a></p>
 
         <div class="contact-links">
+          <a href="https://search.asu.edu/profile/5831100" target="_blank" rel="noopener">ASU profile</a>
           <a href="https://scholar.google.com/citations?user=EbkMt7EAAAAJ&amp;hl=en" target="_blank" rel="noopener">Google Scholar</a>
           <a href="https://orcid.org/0000-0001-7254-0602" target="_blank" rel="noopener">ORCID</a>
           <a href="https://www.researchgate.net/profile/Cheng-Kai-Hsu-3" target="_blank" rel="noopener">ResearchGate</a>
@@ -611,9 +613,9 @@
     }, { rootMargin: '-40% 0px -55% 0px', threshold: [0, 0.25, 0.5, 1] });
     sections.forEach(sec => io.observe(sec));
 
-    // In-page scrolling: quick ease-out, no overshoot
-    const HEADER_OFFSET = 80, DURATION = 400;
-    const easeOutBackSoft = t => 1 - Math.pow(1 - t, 3);
+    // In-page scrolling: quick ease-out with a tiny settle (~1.5% overshoot)
+    const HEADER_OFFSET = 80, DURATION = 450;
+    const easeOutBackSoft = t => { const c = 0.3; return 1 + (c + 1) * Math.pow(t - 1, 3) + c * Math.pow(t - 1, 2); };
     const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
     function scrollToTarget(target) {
       const start = window.scrollY;
