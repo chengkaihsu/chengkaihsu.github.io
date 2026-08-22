@@ -145,9 +145,10 @@ h1 .nickname { color: var(--accent); font-weight: 500; }
 .section { max-width: var(--max); margin: 0 auto; padding: 88px 24px; }
 .section.alt {
   max-width: none; background: var(--bg-alt);
+  padding-left: max(24px, calc((100% - var(--max)) / 2 + 24px));
+  padding-right: max(24px, calc((100% - var(--max)) / 2 + 24px));
   border-top: 1px solid var(--line); border-bottom: 1px solid var(--line);
 }
-.section.alt > * { max-width: var(--max); margin-left: auto; margin-right: auto; }
 .section.alt + .section.alt { border-top: 0; }
 
 .section-head { margin-bottom: 36px; }
@@ -155,7 +156,7 @@ h2 { font-size: clamp(1.7rem, 2.8vw, 2.2rem); font-weight: 800; letter-spacing: 
 .section-intro { color: var(--muted); max-width: 600px; font-size: 1rem; }
 
 .two-column { display: grid; grid-template-columns: 220px minmax(0, 1fr); gap: 64px; align-items: start; }
-.two-column .section-head { margin-bottom: 0; }
+.two-column .section-head { position: sticky; top: 96px; margin-bottom: 0; }
 
 .text-block p { color: var(--text-2); max-width: 66ch; }
 .text-block .intro { color: var(--text); font-size: 1.2rem; font-weight: 500; letter-spacing: -0.01em; line-height: 1.5; }
@@ -168,6 +169,7 @@ h2 { font-size: clamp(1.7rem, 2.8vw, 2.2rem); font-weight: 800; letter-spacing: 
 
 /* Research cards */
 .grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; }
+.section-body { min-width: 0; }
 .card {
   background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius);
   padding: 28px; transition: border-color .15s ease;
@@ -235,7 +237,7 @@ a.pub-title:hover { color: var(--accent); }
 .callout p { color: var(--text-2); font-size: 0.93rem; margin-bottom: 16px; max-width: none; }
 
 /* Contact */
-.contact-section { display: grid; grid-template-columns: 220px minmax(0, 1fr); gap: 64px; align-items: start; }
+
 .contact-card {
   background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius);
   padding: 28px 32px; max-width: 520px;
