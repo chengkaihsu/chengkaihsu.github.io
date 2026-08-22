@@ -22,7 +22,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Manrope:wght@500;700;800&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="style.css?v=10" />
+  <link rel="stylesheet" href="style.css?v=11" />
 
   <!-- Structured data for Google -->
   <script type="application/ld+json">
@@ -90,7 +90,7 @@
     <section class="hero">
       <div class="hero-text">
         <p class="eyebrow">Climate · Health · Transportation</p>
-        <h1><span class="honorific">Dr.</span> Cheng-Kai <span class="nickname">(Kai)</span> Hsu</h1>
+        <h1>Cheng-Kai <span class="nickname">(Kai)</span> Hsu</h1>
         <p class="hero-title">
           Assistant Professor<br />
           <a href="https://sgsup.asu.edu/" target="_blank" rel="noopener">School of Geographical Sciences and Urban Planning</a><br />
@@ -601,7 +601,10 @@
     // Highlight the nav link for the section currently in view
     const navLinks = [...document.querySelectorAll('.nav-links a[href^="#"]')];
     const sections = navLinks.map(a => document.querySelector(a.getAttribute('href'))).filter(Boolean);
-    const setActive = id => navLinks.forEach(a => a.classList.toggle('is-active', a.getAttribute('href') === '#' + id));
+    const setActive = id => {
+      navLinks.forEach(a => a.classList.toggle('is-active', a.getAttribute('href') === '#' + id));
+      sections.forEach(sec => sec.classList.toggle('is-active', sec.id === id));
+    };
     const io = new IntersectionObserver(entries => {
       const visible = entries.filter(e => e.isIntersecting).sort((a, b) => b.intersectionRatio - a.intersectionRatio)[0];
       if (visible) setActive(visible.target.id);
