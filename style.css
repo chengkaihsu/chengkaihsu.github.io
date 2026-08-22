@@ -115,6 +115,7 @@ h1 .nickname { color: var(--accent); font-weight: 800; }
 .hero-title a { color: inherit; text-decoration-color: var(--line-strong); }
 .hero-title a:hover { color: var(--accent); }
 .lead { font-size: 1.15rem; line-height: 1.65; max-width: 600px; color: var(--text-2); }
+.lead .hl { color: var(--accent); font-weight: 600; }
 
 .buttons { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 32px; }
 .button {
