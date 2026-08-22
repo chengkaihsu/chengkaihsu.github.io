@@ -508,12 +508,22 @@
   </main>
 
   <footer>
-    <p>© <span id="year">2026</span> Cheng-Kai Hsu</p>
+    <p>© <span id="year">2026</span> Cheng-Kai Hsu · Last updated: <span id="updated">08/21/2026</span></p>
   </footer>
 
   <script>
     // Footer year
     document.getElementById("year").textContent = new Date().getFullYear();
+
+    // "Last updated" — uses the file's modification date from the server (auto-updates on every push)
+    (function () {
+      var d = new Date(document.lastModified);
+      if (!isNaN(d)) {
+        var mm = String(d.getMonth() + 1).padStart(2, "0");
+        var dd = String(d.getDate()).padStart(2, "0");
+        document.getElementById("updated").textContent = mm + "/" + dd + "/" + d.getFullYear();
+      }
+    })();
 
     // Mobile nav toggle
     const toggle = document.querySelector(".nav-toggle");
