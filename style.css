@@ -16,8 +16,8 @@
   --accent-soft: #f6e9ee;
   --gold: #ffc627;          /* ASU gold — small touches only */
   --gold-soft: #fff3cc;
-  --green: #2a6648;         /* forest green — small touches only */
-  --green-soft: #e6f2ea;
+  --green: #3b7a5a;         /* sage green — time, numbering */
+  --green-soft: #e9f2ec;
   --radius: 12px;
   --max: 1080px;
   --sans: "Inter", ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
@@ -72,7 +72,7 @@ sub { font-size: 0.7em; }
   color: var(--text); text-decoration: none;
   display: inline-flex; align-items: center; gap: 10px;
 }
-.logo::before { content: ""; width: 10px; height: 10px; border-radius: 3px; background: var(--gold); }
+.logo::before { content: ""; width: 10px; height: 10px; border-radius: 3px; background: var(--accent); }
 .nav-links { display: flex; gap: 4px; font-size: 0.875rem; font-weight: 500; }
 .nav-links a {
   color: var(--text-2); text-decoration: none; padding: 6px 10px; border-radius: 8px;
@@ -99,7 +99,7 @@ sub { font-size: 0.7em; }
 }
 .eyebrow {
   display: inline-flex; align-items: center; gap: 8px;
-  color: var(--accent); font-weight: 600; font-size: 0.75rem;
+  color: var(--muted); font-weight: 600; font-size: 0.75rem;
   letter-spacing: 0.12em; text-transform: uppercase; margin: 0 0 20px;
 }
 .eyebrow::before { content: ""; width: 18px; height: 2px; background: var(--gold); border-radius: 2px; }
@@ -215,7 +215,7 @@ a.pub-title:hover { color: var(--accent); }
 .pub-venue em { font-style: normal; }
 .pub.featured .pub-year::after {
   content: "Featured"; display: inline-block; margin-top: 8px; padding: 2px 7px; border-radius: 6px;
-  background: var(--gold-soft); color: #7a5a00;
+  background: var(--green-soft); color: var(--green);
   font-family: var(--sans); font-size: 0.62rem; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase;
 }
 
