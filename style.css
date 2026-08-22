@@ -228,6 +228,23 @@ a.pub-title:hover { color: var(--accent); }
 .timeline.awards p { font-size: 0.95rem; line-height: 1.5; }
 .timeline.awards time { color: var(--green); }
 
+/* Media & talks */
+.timeline.media p strong { display: block; font-weight: 600; color: var(--text); }
+.timeline.media p strong a { color: var(--text); text-decoration: none; }
+.timeline.media p strong a:hover { color: var(--accent); }
+.media-source { display: block; font-size: 0.85rem; color: var(--muted); margin-top: 2px; }
+.media-item { display: grid; grid-template-columns: 120px minmax(0, 1fr); gap: 18px; align-items: start; }
+.media-thumb { position: relative; display: block; border-radius: 8px; overflow: hidden; border: 1px solid var(--line); background: #000; }
+.media-thumb img { width: 120px; height: 90px; object-fit: cover; display: block; }
+.media-thumb .play {
+  position: absolute; inset: 0; display: grid; place-items: center;
+}
+.media-thumb .play::before {
+  content: ""; width: 0; height: 0; border-left: 14px solid #fff; border-top: 9px solid transparent; border-bottom: 9px solid transparent;
+  margin-left: 3px; filter: drop-shadow(0 1px 2px rgba(0,0,0,.5));
+}
+.media-thumb:hover img { opacity: .85; }
+
 /* Callout */
 .callout {
   margin-top: 28px; padding: 24px 28px; border-radius: var(--radius);
@@ -275,6 +292,8 @@ footer a { color: var(--muted); }
   .pub { grid-template-columns: 1fr; gap: 4px; }
   .pub.featured .pub-year::after { margin: 0 0 0 10px; }
   .timeline li { grid-template-columns: 1fr; gap: 2px; }
+  .media-item { grid-template-columns: 100px minmax(0, 1fr); gap: 12px; }
+  .media-thumb img { width: 100px; height: 75px; }
   .facts { grid-template-columns: 1fr; }
   .buttons .button { flex: 1 1 auto; justify-content: center; }
 }
